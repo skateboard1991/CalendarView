@@ -53,6 +53,28 @@ public class CalendarView extends LinearLayout
         }
     }
 
+    public void setYear(int year)
+    {
+        if (calendarCards != null)
+        {
+            for (CalendarCard card : calendarCards)
+            {
+                card.setYear(year);
+            }
+        }
+    }
+
+    public void setMonth(int month)
+    {
+        if (calendarCards != null)
+        {
+            for (CalendarCard card : calendarCards)
+            {
+                card.setYear(month);
+            }
+        }
+    }
+
 
     public void setOnCellClickListener(OnCellClickListener listener)
     {
